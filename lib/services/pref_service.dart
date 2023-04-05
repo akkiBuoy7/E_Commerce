@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../ui/model/user.dart';
@@ -27,5 +29,6 @@ class PrefService {
     _preferences.remove(ProjectUtil.PREF_USER_NAME);
     _preferences.remove(ProjectUtil.PREF_PASSWORD);
     _preferences.remove(ProjectUtil.PREF_ISADMIN);
+    exit(0);
   }
 }

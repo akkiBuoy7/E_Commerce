@@ -1,10 +1,13 @@
 import 'package:e_commerce/ui/login.dart';
 import 'package:e_commerce/ui/product_listing.dart';
 import 'package:e_commerce/ui/splash.dart';
+import 'package:e_commerce/utility/database_helper.dart';
 import 'package:e_commerce/utility/project_util.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+final dbHelper = DataBaseHelper();
+
+void main() async{
   runApp(const MyApp());
 }
 
